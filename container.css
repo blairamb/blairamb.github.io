@@ -1,0 +1,17 @@
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container p:first-of-type {
+  color: #03312E;
+}
+.container p:not(:first-of-type) {
+  text-indent: 20px;
+}
+.reflection {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightgray;
+}
