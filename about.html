@@ -1,43 +1,135 @@
+To move the "Video Resume" and "Resume" links under the blockquote, you can update the HTML structure accordingly. Here's the modified code:
+
+```html
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+    <title>About</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #03312E;
+            padding: 10px;
+            color: #FFF;
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav li {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .about-me {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            margin-top: 0;
+            text-align: left;
+        }
+
+        .about-me h4 {
+            color: #03312E;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .about-me p {
+            margin-bottom: 10px;
+        }
+
+        .about-me blockquote {
+            margin-top: 20px;
+            color: #03312E;
+            font-style: italic;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: left;
+            background-color: #03312E;
+            color: #FFF;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links li {
+            list-style: none;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Amber</h1>
-    <p>Adaptable, Motivated, Balanced, Exuberant, Reliable</p>
+    <div class="header">
+        <h1>Amber</h1>
+        <p>Adaptable, Motivated, Balanced, Exuberant, Reliable</p>
+    </div>
     <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#learn.html">TBD</a></li>
-    </ul>
-    <b>Hey, there!</b>
-    <br>
-    My name is Amber Blair. I am a <em>mother</em> of two children. I am a full-time employee and an aspiring academic <em>leader</em>.
-    <br>
-    I have a 9-month-old basset hound named Maggie Mae. I enjoy walking Maggie and teaching her new tricks.
-    <br>
-    I seek to shape the future of learning through my academic pursuits and real-world experiences.
-    <br>
-    I have a newfound love for coffee. I enjoy trying new blends and brews from local coffee shops.
-    <br>
-    I am a true crime fan. I enjoy exploring criminal behavior and listening to true crime podcasts.
-    <br>
-    I am a self-proclaimed plant mom. I enjoy gardening and tending to my plant babies.
-    <br>
-    I enjoy walks and taking my children to local parks and recreation centers.
-    <br>
-    I am completing my bachelor's degree in Educational Studies.
-    <br>
-    I plan to pursue a master's in Arts in Educational Studies.
-    <br>
-    I love the ⛰️🥾🧢🏞️🌍
-    <br>
-    <blockquote>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</blockquote>
-    <br>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#learn.html">Let's Learn</a></li>
+            <li><a href="#contact.html">Contact</a></li>
+            <li><a href="reflectionn.html">Resources &amp; References</a></li>
+        </ul> 
+    </ul> 
+    <div class="photo-container">
+        <img src="unnamed.jpg" alt="Your Photo" class="photo">
+    </div>
+    <div class="about-me">
+        <h4>Hello, my name is Amber Blair!</h4>
+        <p>Firstly, I am a dedicated mother, full-time employee, and aspiring educational leader with a passion for making a difference in the field of education. I have a strong commitment to personal and professional growth; I seek to shape the future of learning through my academic pursuits and real-world experiences.</p>
+        <p>I'm completing my undergraduate degree in Educational Studies, Academic Leadership, and policy analysis from the University of Missouri. I deeply understand the dynamics of education and its potential to transform lives. As a devoted mother of two, I draw inspiration from my children's educational journeys. This strongly motivates me to contribute meaningfully to the field.</p>
+        <p>In addition to my academic pursuits, I work full-time at UMKC, where I actively engage with the university community and contribute to the enhancement of educational programs and services. My hands-on experience provides me with invaluable insights into the practical aspects of education and strengthens my resolve to make a positive impact.</p>
+        <p>My unwavering dedication to my family and career does not overshadow my diverse range of interests. As an avid true crime aficionado, I find solace and intellectual stimulation in exploring the intricate workings of criminal behavior and the pursuit of justice. I immerse myself in true crime literature, podcasts, and engaging discussions with fellow enthusiasts in my free time.</p>
+        <blockquote>"Education is the most powerful weapon which you can use to change the world." - <em>Nelson Mandela</em></blockquote>
+        <ul class="footer-links">
+<li><a href="Fri Jun 09 2023 10_32_56 AM_default_d54782cf (1).mp4">Video Resume</a></li>
+<li><a href="Blair,resume.pdf.url">Resume</a></li>
+        </ul>
+    </div>
+
     <footer>
         <p>Amber Blair<br>
         <a href="mailto:blairamb@umsystem.edu">blairamb@umsystem.edu</a></p>
@@ -45,6 +137,3 @@
     </footer>
 </body>
 </html>
-
-
-  
