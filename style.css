@@ -1,8 +1,19 @@
 Header {
     color: #03312E;
-    text-align: left;
+    text-align: center;
     font-family: Roboto, serif;
-    font-size: large;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: 0 auto; /* Added property */
+}
+
+h1 {
+    color: #03312E;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 body {
@@ -70,6 +81,7 @@ footer a {
     color: #FFF;
     text-decoration: none;
 }
+
 /* style.css */
 
 @media screen and (max-width: 600px) {
