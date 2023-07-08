@@ -1,40 +1,41 @@
-Header {
+head {
+    color: #03312E;
+    text-align: center;
+    font-family: Roboto, serif;
+    font-size: large;
+}
+
+h1 {
     color: #03312E;
     text-align: center;
     font-family: Roboto, serif;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin: 0 auto; /* Added property */
-}
-
-h1 {
-    color: #03312E;
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    align-items: center;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-color: #F2F2F2;
 }
 
+.header {
+    background-color: #03312E;
+    padding: 10px;
+    color: #FFF;
+    text-align: center;
+}
+
 .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 .nav li {
+    display: inline-block;
     list-style: none;
     margin-right: 10px;
 }
@@ -46,10 +47,6 @@ body {
     margin: 0 auto;
     max-width: 800px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .content p {
@@ -68,30 +65,14 @@ footer {
     text-align: left;
     background-color: #03312E;
     color: #FFF;
-    display: flex;
-    align-items: center;
 }
 
 footer p {
     margin: 0;
-    flex-grow: 1;
+    display: inline-block;
 }
 
 footer a {
     color: #FFF;
     text-decoration: none;
-}
-
-/* style.css */
-
-@media screen and (max-width: 600px) {
-    /* Styles for screens with a maximum width of 600px */
-    .header {
-        font-size: 24px;
-    }
-
-    .content {
-        max-width: 100%;
-        padding: 10px;
-    }
 }
