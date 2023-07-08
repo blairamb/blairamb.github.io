@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+        h1 {
+            color: #15040450;
+            text-align: center;
+            font-family: Roboto, serif;
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+            background-color: #F2F2F2;
+        }
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+            background-color: #03312E;
+        }
+        .nav li {
+            float: left;
+        }
+        .nav li a, .dropbtn {
+            display: block;
+            color: #373939;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav li a:hover, .dropdown:hover .dropbtn {
+            background-color: #4D5656;
+            color: white;
+        }
+        .nav li.dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #03312E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            background-color: #03312E;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 0 auto;
+            max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: left;
+            color: #FFF;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            background-color: #03312E;
+            color: #FFF;
+        }
+        footer p {
+            margin: 0;
+            display: inline-block;
+        }
+        footer a {
+            color: #FFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home</h1>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#learn.html">Let's Learn</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+        <li><a href="reflection.html">Resources &amp; References</a></li>
+    </ul>
+    <div class="content">
+        <p>
+            Project Concert is a web-based system designed specifically to track program data. The UMKC Master of Science in Anesthesia program fundamentally uses Project Concert to record data and assess our students and faculty. UMKC Master of Science in Anesthesia students will receive login information and instruction on how to use the system. They are required to use Project Concert to document clinical experiences for each case in which they participate, document the start and end times of their total clinical day, and schedule daily clinical preceptor evaluations.
+        </p>
+    </div>
+
+    <footer>
+        <p>Amber Blair &copy; 2023<br>
+        <a href="mailto:blairamb@umsystem.edu">blairamb@umsystem.edu</a></p>
+    </footer>
+</body>
+</html>
